@@ -1,0 +1,6 @@
+.bsb.lock
+.merlin
+/.parcel-cache/
+/dist/
+/lib/bs/
+/node_modules/
