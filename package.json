@@ -2,7 +2,7 @@
   "name": "reason-react-parcel-starter",
   "version": "0.0.0",
   "scripts": {
-    "build": "run-s clean build:bsb build:parcel",
+    "build": "run-s build:bsb build:parcel",
     "build:bsb": "bsb -make-world",
     "build:parcel": "parcel build --no-source-maps src/index.html",
     "start": "run-p start:bsb start:parcel",
