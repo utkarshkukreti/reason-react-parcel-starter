@@ -10,13 +10,19 @@ function Index$Counter(Props) {
         }));
   var setCount = match[1];
   var count = match[0];
-  return React.createElement("div", undefined, React.createElement("button", {
+  return React.createElement("div", {
+              className: "mt-6 flex justify-center align-center"
+            }, React.createElement("button", {
+                  className: "px-3 py-1 bg-blue-600 text-white rounded",
                   onClick: (function (param) {
                       return Curry._1(setCount, (function (param) {
                                     return count - 1 | 0;
                                   }));
                     })
-                }, "-"), " " + (String(count) + " "), React.createElement("button", {
+                }, "-"), React.createElement("div", {
+                  className: "mx-4"
+                }, String(count)), React.createElement("button", {
+                  className: "px-3 py-1 bg-blue-600 text-white rounded",
                   onClick: (function (param) {
                       return Curry._1(setCount, (function (param) {
                                     return count + 1 | 0;
